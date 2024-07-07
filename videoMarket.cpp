@@ -1,8 +1,4 @@
-#include <iostream>
-#include <string>
 #include "videoMarket.h"
-
-using namespace std;
 
 Market::Market() {
     movie_title = "";
@@ -12,7 +8,7 @@ Market::Market() {
     price_disk = 0;
 }
 
-Market::Market(const string& movie_title, const string& director, const string& genre, double popularity_rating, int price_disk) {
+Market::Market(const string& movie_title, const string& director, int genre, double popularity_rating, int price_disk) {
     this->movie_title = movie_title;
     this->director = director;
     this->genre = genre;
@@ -20,15 +16,15 @@ Market::Market(const string& movie_title, const string& director, const string& 
     this->price_disk = price_disk;
 }
 
-void Market::setMovieTitle(const string& movie_title) {
+void Market::setMovieTitle(string movie_title) {
     this->movie_title = movie_title;
 }
 
-void Market::setDirector(const string& director) {
+void Market::setDirector(string director) {
     this->director = director;
 }
 
-void Market::setGenre(const string& genre) {
+void Market::setGenre(string genre) {
     this->genre = genre;
 }
 

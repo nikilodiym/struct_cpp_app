@@ -9,7 +9,7 @@ class Market {
 private:
     string movie_title;
     string director;
-    int genre;
+    string genre;
     double popularity_rating;
     int price_disk;
 
@@ -17,17 +17,17 @@ public:
     Market();
     Market(const string& movie_title, const string& director, int genre, double popularity_rating, int price_disk);
 
-    void setCompany(const string& movie_title);
-    void setColor(const string& director);
-    void setPower(int genre);
-    void setVolume(double popularity_rating);
-    void setHeatingTemperature(int price_disk);
+    void setMovieTitle(string movie_title);
+    void setDirector(string director);
+    void setGenre(string genre);
+    void setPopularityRating(double popularity_rating);
+    void setPriceDisk(int price_disk);
 
-    string getCompany() const;
-    string getColor() const;
-    int getPower() const;
-    double getVolume() const;
-    int getHeatingTemperature() const;
+    string getMovieTitle() const;
+    string getDirector() const;
+    int getGenre() const;
+    double getPopularityRating() const;
+    int getPriceDisk() const;
 
     ~Market();
 };
