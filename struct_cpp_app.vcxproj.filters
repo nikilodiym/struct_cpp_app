@@ -9,5 +9,9 @@
     <ClCompile Include="main.cpp">
       <Filter>main</Filter>
     </ClCompile>
+    <ClCompile Include="videoMarket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="videoMarket.h" />
   </ItemGroup>
 </Project>
