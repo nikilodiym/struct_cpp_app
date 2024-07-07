@@ -48,6 +48,6 @@ int main() {
 
     cout << "Object count after deletion = " << CustomColor::getObjectCount() << endl;
 
-	system("pause");
+    system("pause");
     return 0;
 }
