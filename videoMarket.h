@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Market {
+class Disk {
 private:
     string movie_title;
     string director;
@@ -14,8 +14,8 @@ private:
     int price_disk;
 
 public:
-    Market();
-    Market(const string& movie_title, const string& director, int genre, double popularity_rating, int price_disk);
+    Disk();
+    Disk(string movie_title, string director, string genre, double popularity_rating, int price_disk);
 
     void setMovieTitle(string movie_title);
     void setDirector(string director);
@@ -25,11 +25,11 @@ public:
 
     string getMovieTitle() const;
     string getDirector() const;
-    int getGenre() const;
+    string getGenre() const;
     double getPopularityRating() const;
     int getPriceDisk() const;
 
-    ~Market();
+    ~Disk();
 };
 
 #endif
